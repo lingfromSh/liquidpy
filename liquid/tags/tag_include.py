@@ -25,5 +25,5 @@ class TagInclude(Tag):
 		# TODO: self.data [Token]
 		snippet = global_envs["envs"].get(str(self.data).strip("'"), "")
 		if hasattr(snippet, "render"):
-			return snippet.render(settings=global_envs.get("settings", dict()))
+			return snippet.render(**global_envs)
 		return ""

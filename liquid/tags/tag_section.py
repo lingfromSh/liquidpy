@@ -24,5 +24,5 @@ class TagSection(Tag):
 		# Variables created inferred by include tag are sections liquid object
 		section = global_envs["envs"].get(str(self.data).strip("'"), "")
 		if hasattr(section, "render"):
-			return section.render(settings=global_envs.get("settings", dict()))
+			return section.render(**global_envs)
 		return ""
