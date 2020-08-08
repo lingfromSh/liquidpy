@@ -36,7 +36,7 @@ class Tag:
     VOID = False
     # The syntax of this tag
     SYNTAX = None
-    # Prior tags pattern, used to valiate if this tag is in the right
+    # Prior tags pattern, used to validate if this tag is in the right
     # position.
     # This should be a pyparsing object able to match the prior tags
     # This is a list since a tag can be with multiple tags,
