@@ -6,7 +6,7 @@
     - [x] concat
     - [x] join
     - [x] first
-    - [ ] index
+    - [x] index
     - [x] last
     - [x] map
     - [x] reverse
@@ -29,20 +29,20 @@
     - [x] modulo
 
 3. Color Filters
-    - [ ] brightness_difference
-    - [ ] color_brightness
-    - [ ] color_contrast
-    - [ ] color_darken
-    - [ ] color_desaturate
-    - [ ] color_difference
-    - [ ] color_extract
-    - [ ] color_lighten
-    - [ ] color_mix
-    - [ ] color_modify
-    - [ ] color_saturate
-    - [ ] color_to_rgb
-    - [ ] color_to_hsl
-    - [ ] color_to_hex
+    - [x] brightness_difference
+    - [x] color_brightness
+    - [x] color_contrast 少许误差可能是公式不对 [https://www.w3.org/TR/AERT/#color-contrast]
+    - [x] color_darken
+    - [x] color_desaturate
+    - [x] color_difference
+    - [x] color_extract
+    - [x] color_lighten
+    - [x] color_mix
+    - [x] color_modify
+    - [x] color_saturate
+    - [x] color_to_rgb
+    - [x] color_to_hsl
+    - [x] color_to_hex
 
 4. Money Filters
     - [ ] money
