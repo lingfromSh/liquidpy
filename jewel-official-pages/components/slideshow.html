@@ -1,0 +1,44 @@
+<ul class="slideshow">
+    {% for picture in local.slideshow.picture %}
+        <!-- 图 -->
+    {% endfor %}
+    {{ for picture in local.slideshow}}
+</ul>
+{% contentmodel %}
+    {
+        "name": "Slide Show",
+        "code": "slideshow",
+        "blocks": [{
+            "type": "slide",
+            "settings": [
+            {
+                "type": "image_picker",
+                "code": "picture",
+                "label": "Picture",
+                "description": "Picture"
+            },
+            {
+                "type": "text",
+                "code": "title",
+                "label": "Title"
+                "description": "Picture",
+                "default": "Title"
+            },
+            {
+                "type": "text",
+                "code": "sub_title",
+                "label": "Sub title"
+                "description": "Null",
+                "default": "Sub title"
+            }，
+            {
+                "type": "text",
+                "id": "btn-text"
+                "label": {
+                    "zh": "按钮",
+                    
+                }
+            }]
+        }]
+    }
+{% endcontentmodel %}

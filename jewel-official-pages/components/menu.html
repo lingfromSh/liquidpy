@@ -1,0 +1,18 @@
+<div>
+    {% for item in menu[menu.code] %}
+    <ul>
+        <li>{{ item }}</li>
+    </ul>
+    {% endfor %}
+</div>
+
+{% contentmodel %}
+{
+    "menu": {
+        "name": {
+            "zh": "菜单",
+            "en": "Menu"
+        }
+    }
+}
+{% endcontentmodel %}

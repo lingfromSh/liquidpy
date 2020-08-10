@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ current_page.name }}</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><img src="{{ asset_img_url: 'jewel.png' }}" alt="Logo" /></li>
+                    <li>{% include 'menu' %}</li>
+                    <li>{% include 'search-btn' %}</li>
+                    <li>
+                        <div>
+                            <img src="" alt="user-icon" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="" alt="liked" />
+                        </div>
+                    </li>
+                    <li>
+                        {% include 'cart-btn' %}
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {{ current_page.content }}
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
